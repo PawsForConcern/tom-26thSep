@@ -1,0 +1,19 @@
+package collection;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapTest {
+	public static void main(String[] args) {
+		Map<Integer, String> map=new HashMap();
+		map.put(45326, "London");
+		map.put(43605, "New York");
+		map.put(54833, "Shanghai");
+		map.put(65378, "Sidney");
+		map.put(54727, "Istanbul");
+		map.put(54727, "Istanbul");
+		for (Map.Entry m:map.entrySet()) {
+			System.out.println(m.getKey()+" - "+m.getValue());
+		}
+	}
+}

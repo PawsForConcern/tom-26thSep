@@ -1,0 +1,11 @@
+package book;
+
+public class Book {
+	public String title;
+	String author;
+	float price;
+	String publisher;
+	public void print() {
+		System.out.println("Printing the book "+title);
+	}
+}

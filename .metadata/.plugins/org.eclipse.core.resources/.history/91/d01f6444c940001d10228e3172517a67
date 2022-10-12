@@ -1,0 +1,6 @@
+package shape;
+
+abstract class Shape {
+	public String colour;
+	public abstract float area();
+}

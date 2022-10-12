@@ -1,0 +1,12 @@
+package string;
+
+public class StringExample {
+
+	public static void main(String[] args) {
+		String name="Upasana";
+		name="hello "+name;
+		name=name+", how are you";
+		System.out.println(name);
+	}
+
+}

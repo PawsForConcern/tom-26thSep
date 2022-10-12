@@ -1,0 +1,30 @@
+package person;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		ArrayList<Person> people = new ArrayList<Person>();
+		people.add(new Person("Tim",15,"Senior Developer"));
+		people.add(new Person("Steve",27,"Junior Developer"));
+		people.add(new Person("Phill",5,"CEO"));
+		people.add(new Person("Jane",16,"Satisfaction Assistant"));
+		System.out.println(people.get(0));
+		Scanner scn =new Scanner(System.in);
+		System.out.print("Enter a name to find:");
+		String name=scn.nextLine();
+		boolean f=true;
+		for (int i=0;i<people.size();i++) {
+			System.out.println((people.get(i)).getName());
+			if (name.equals((people.get(i)).getName())) {
+				f = false;
+				System.out.println("Person "+i+" is called "+name+".");
+				break;
+			}
+		}
+		if (f) {
+			System.out.println(name+" is not in people.");
+		}
+	}
+}

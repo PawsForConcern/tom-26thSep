@@ -1,0 +1,15 @@
+package poly_assignment;
+
+public class Triangle extends Shape {
+	final float[] sides = new float[3];
+	public Triangle(String colour, float[] sides) {
+		super(colour);
+		for (int i=0;i<3;i++) {
+			this.sides[i]=sides[i];
+		}
+	}
+	public float area() {
+		float s = (sides[0]+sides[1]+sides[2])/2;
+		return (float)Math.sqrt((double)(s*(s-sides[0])*(s-sides[1])*(s-sides[2])));
+	}
+}

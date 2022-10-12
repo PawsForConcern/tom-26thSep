@@ -1,0 +1,11 @@
+package shape;
+
+public class Test {
+	public static void main(String args[]) {
+		Circle circ1 = new Circle(4.0F);
+		float[] sides = {1.0F,1.0F,1.0F}; 
+		Triangle trin1 = new Triangle(sides);
+		System.out.println(circ1.area());
+		System.out.println(trin1.area());
+	}
+}

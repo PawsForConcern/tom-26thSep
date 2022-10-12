@@ -1,0 +1,31 @@
+package calculator;
+
+import java.util.Scanner;
+public class Calculator {
+	public int add(int a, int b) {return a+b;}
+	public int subtract(int a, int b) {return a-b;}
+	public int divide(int a, int b) {return a/b;}
+	public int multiply(int a, int b) {return a*b;}
+	public int operations() {
+		Scanner scn = new Scanner(System.in);
+		System.out.print("Please enter the first number:");
+		int a = scn.nextInt();
+		System.out.print("\nPlease enter the second number:");
+		int b = scn.nextInt();
+		System.out.print("\nPlease enter the desired operation:");
+		String op = scn.next();
+		switch (op) {
+			case "add":
+				return add(a,b);
+			case "subtract":
+				return subtract(a,b);
+			case "divide":
+				return divide(a,b);
+			case "multiply":
+				return multiply(a,b);
+			default:
+				System.out.println("\nInvalid operation");
+				return 0;
+		}
+	}
+}

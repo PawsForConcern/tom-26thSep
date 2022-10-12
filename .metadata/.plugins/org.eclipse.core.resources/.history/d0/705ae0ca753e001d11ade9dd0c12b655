@@ -1,0 +1,30 @@
+package product;
+
+public class Product {
+	public static int productNumber;
+	private String name;
+	private int stock;
+	private Float price;
+	
+	public Product(int productNumber, String name, int stock, Float price) {
+		this.productNumber = productNumber;
+		this.name = name;
+		this.stock = stock;
+		this.price = price;
+	}
+	public void checkStock() {
+		System.out.println("The current stock is: "+stock);
+	}
+	public void restock(int restock) {
+		this.stock+=restock;
+	}
+	public void purchase(int quantity) {
+		if (this.stock>=quantity) {
+			Float cost = quantity*price;
+			System.out.println("Order of "+quantity+" "+name+" confirmed. The total cost is "+cost);
+		}
+		else {
+			System.out.println("Insufficient stock in storage.");
+		}
+	}
+}

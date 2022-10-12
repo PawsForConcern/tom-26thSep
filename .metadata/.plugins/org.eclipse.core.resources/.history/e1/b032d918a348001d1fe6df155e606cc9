@@ -1,0 +1,17 @@
+package javaLogger;
+
+import java.io.FileReader;
+
+public class LogException {
+	int info;
+	public static void divBy0 () {
+		int x=1/0;
+	}
+	public static void arrayBound() {
+		int[] x = new int[0];
+		int y = x[1];
+	}
+	public static void fileNotFound() throws Exception {
+		FileReader fr = new FileReader("nonexistence.txt");
+	}
+}

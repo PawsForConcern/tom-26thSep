@@ -1,0 +1,11 @@
+package shape;
+
+public class Square extends Shape {
+	public float sideLength;
+	public Square(float sideLength) {
+		this.sideLength=sideLength;
+	}
+	public float area() {
+		return sideLength*sideLength;
+	}
+}

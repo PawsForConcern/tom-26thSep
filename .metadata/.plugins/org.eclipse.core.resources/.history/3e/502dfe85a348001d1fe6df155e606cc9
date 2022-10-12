@@ -1,0 +1,28 @@
+package javaLogger;
+
+import java.util.logging.Logger;
+import java.util.logging.Level;
+
+public class Test {
+	public static void main(String[] args) {
+		Logger log = Logger.getLogger(null);
+		try {
+			LogException.divBy0();
+		}
+		catch (Exception e) {
+			log.log(Level.WARNING,"Div by 0");
+		}
+		try {
+			LogException.arrayBound();
+		}
+		catch (Exception e) {
+			log.log(Level.INFO,"Array index out of bounds.");
+		}
+		try {
+			LogException.fileNotFound();
+		}
+		catch (Exception e) {
+			log.log(Level.SEVERE,"File not found");
+		}
+	}
+}

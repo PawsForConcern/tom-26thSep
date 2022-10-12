@@ -1,0 +1,14 @@
+package test;
+
+import customer.Customer;
+import product.Product;
+import payment.Payment;
+import book.Book;
+import java.util.Scanner;
+
+public class Test {
+	public static void main(String[] args) {
+		Customer tim = new Customer("Tim4TheWin","Tim Minchin", "P4SSW0RD","United Kingdom");
+		tim.details("P4SSW0RD");
+	}
+}

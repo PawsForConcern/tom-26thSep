@@ -1,0 +1,15 @@
+package interfacepack;
+
+public class Employee extends Person implements Artist,Player{
+	public void doArt()
+	{
+		System.out.println("Employees can also be interested in some art");
+	}
+	public void doPlay() {
+		System.out.println("Playing something is good for mental and physical health");
+	}
+	public void Do() {
+		System.out.println("Get done, son");
+	}
+
+}

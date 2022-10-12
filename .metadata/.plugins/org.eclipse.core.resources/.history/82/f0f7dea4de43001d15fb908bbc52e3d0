@@ -1,0 +1,12 @@
+package unit;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+public class RunTest {
+	@Test
+	public void runFindBiggest() {
+		assertEquals(300,Calculator.findBiggest((int){10,20,15}));
+	}
+}

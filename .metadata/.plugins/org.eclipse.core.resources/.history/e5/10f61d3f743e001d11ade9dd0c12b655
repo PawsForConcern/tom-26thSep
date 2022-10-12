@@ -1,0 +1,24 @@
+package customer;
+
+public class Customer {
+	public static String username;
+	private String name;
+	private String password;
+	private String country;
+	private Float totalSpending=0.0F;
+	
+	public Customer(String username, String name, String password, String country) {
+		this.username = username;
+		this.name = name;
+		this.password = password;
+		this.country = country;
+	}
+	public void details(String password) {
+		if (password==this.password) {
+			System.out.println("Hello, "+name+", you're currently registered in "+country+" and so far you have spent £"+totalSpending);
+		}
+		else {
+			System.out.println("Incorrect password.");
+		}
+	}
+}

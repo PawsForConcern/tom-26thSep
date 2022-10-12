@@ -1,0 +1,11 @@
+package interfacepack;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Person implements Doer{
+	public void Do()
+	{
+		System.out.println("Every person does something to make his/her living");
+	}
+}

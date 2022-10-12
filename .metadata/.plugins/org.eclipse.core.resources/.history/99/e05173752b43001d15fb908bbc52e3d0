@@ -1,0 +1,16 @@
+package person;
+
+public class Person {
+	private String Name;
+	private int Age;
+	private String JobTitle;
+	public Person(String Name, int Age, String JobTitle) {
+		this.Name=Name;
+		this.Age=Age;
+		this.JobTitle=JobTitle;
+	}
+	
+	public String toString() {
+		return "["+Name+", "+Age+", "+JobTitle+"]";
+	}
+}

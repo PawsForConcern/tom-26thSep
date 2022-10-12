@@ -1,0 +1,8 @@
+package person;
+
+public class Main {
+	public static void main(String[] args) {
+		Person per1 = new Person("Tim",15,"Senior Developer");
+		System.out.println(per1);
+	}
+}

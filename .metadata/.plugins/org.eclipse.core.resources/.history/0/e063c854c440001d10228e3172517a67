@@ -1,0 +1,8 @@
+package shape;
+
+public class Test {
+	public static void main(String args[]) {
+		Circle circ1 = new Circle(4.0F);
+		System.out.println(circ1.area());
+	}
+}

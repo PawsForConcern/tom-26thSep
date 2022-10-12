@@ -1,0 +1,14 @@
+package test;
+
+import customer.Customer;
+import product.Product;
+
+public class Test {
+	public static void main(String[] args) {
+		Customer cust1 = new Customer();
+		cust1.show();
+		Product prod1 = new Product();
+		prod1.showProduct();
+		
+	}
+}

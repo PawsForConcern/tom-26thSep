@@ -1,0 +1,8 @@
+package DataType;
+
+public class DataType {
+	public static void main(String[] args) {
+		boolean tim;
+		System.out.println(tim);
+	}
+}
